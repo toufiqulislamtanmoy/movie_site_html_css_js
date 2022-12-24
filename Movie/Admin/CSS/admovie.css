@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    margin: 3rem;
+    padding: 3rem;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h3{
+    padding: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+.from-container{
+    border: 1px solid #26ae27;
+    border-radius: 1rem;
+    width: 80%;
+    background: white;
+}
+
+.from-container form{
+    border: 1 px solid red;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.from-container form label{
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem 0;
+}
+
+.from-container form select{
+    outline: none;
+    height: 3rem;
+}
+
+.from-container form input{
+    outline: none;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.from-container form input[name="upload"]{
+    outline: none;
+    margin: 1rem 0;
+}
+
+form .poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 3rem;
+    width: 100%;
+}
+
+ form .poster.active{
+    border: 2px dashed red;
+}
+
+form .poster .iocn{
+    color: #26ae27;
+    font-size: 3.1rem;
+}
+ form .poster .drag-drop{
+    font-size: 1.5rem;
+    font-style:oblique;
+}
+ form .poster span{
+    padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+form .poster input{
+    color: #26ae27;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+
+form .poster img{
+    width: 20%;
+    height: 10%;
+    object-fit: cover;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Movie Admin Panel</title>
+    <link rel="stylesheet" href="../CSS/admovie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Admin Panel</h3>
+        <div class="from-container">
+            <form action="" method="post" enctype="multipart/form-data">
+                <label for="posterimg">Movie Poster: </label>
+                <div class="poster">
+                    <div class="iocn">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3 class="drag-drop">Drag & Drop</h3>
+                    <span>OR</span>
+                    <!--<button>Browse File</button>-->
+                    <input type="file" value="Brows File">
+                </div>
+                <label for="mtitle">Movie Name: </label>
+                <input type="text" name="mtitle" placeholder="Enter Movie Title">  
+                <label for="mtype">Select Type:</label> 
+                <select name="mtype" id="mtype">
+                    <option value="" selected disabled>Select a Type</option>
+                    <option value="hd">Hindi Dubbed</option>
+                    <option value="da">Dual Audio</option>
+                    <option value="eng">English</option>
+                    <option value="kor">Korean</option>
+                    <option value="chi">Chineis</option>
+                </select>
+                <label for="date">Year: </label>
+                <input type="text" name="date" placeholder="Enter The Year">
+                <label for="catagory">Select Catagory:</label> 
+                <select name="catagory" id="catagory">
+                    <option value="" selected disabled>Select a Catagory</option>
+                    <option value="hollywood">Hollywood</option>
+                    <option value="bollywood">Bollywood</option>
+                    <option value="southIndian">South Indian</option>
+                    <option value="webserise">Webserise</option>
+                </select>
+
+                <label for="starCast">Star CastS: </label>
+                <input type="text" placeholder="Star Cast Details" name="starCast">
+
+                <label for="imdb">IMDB Rateing: </label>
+                <input type="text" placeholder="Enter Rating" name="imdb">
+                <label for="url">Download URL: </label>
+                <input type="text" name="url" placeholder="Enter The URL">
+
+                <input type="submit" value="Upload" name="upload">
+            </form>
+        </div>
+    </div>
+    <script src="../JS/admin.js"></script>
+</body>
+</html>
